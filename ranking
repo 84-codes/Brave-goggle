@@ -16,7 +16,7 @@ $boost=6,site=wikidata.org
 
 # --- Forums / Community / Discussion ---
 $boost=5,site=stackoverflow.com
-$boost=5,site=*.stackexchange.com
+$boost=5,site=stackexchange.com
 $boost=5,site=serverfault.com
 $boost=5,site=superuser.com
 $boost=5,site=gateoverflow.in
@@ -24,7 +24,9 @@ $boost=5,site=reddit.com
 $boost=4,site=quora.com
 
 # --- Academic / Educational ---
-$boost=4,site=*.edu
+# $boost=4,site=.edu
+*.edu$boost=10
+
 
 # --- Mild Boost: Reputable Tech Learning & Discussion ---
 $boost=3,site=w3schools.com
