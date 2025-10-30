@@ -3,25 +3,52 @@
 ! public: false
 ! author: Custom
 
-$boost=10,site=wikipedia.org
-$boost=9,site=wikibooks.org
-$boost=8,site=wiktionary.org
-$boost=8,site=dictionary.cambridge.org
-$boost=8,site=vocabulary.com
-$boost=8,site=quora.com
-$boost=8,site=eeet.quora.com
-$boost=8,site=gateoverflow.in
+##################################################
+#  BOOSTED SOURCES
+##################################################
 
-$boost=10,site=stackoverflow.com
-$boost=10,site=stackexchange.com
-$boost=10,site=reddit.com
+# --- Strong Boost: Wikipedia & Related ---
+$boost=7,site=wikipedia.org
+$boost=6,site=wikibooks.org
+$boost=6,site=wikiversity.org
+$boost=6,site=wiktionary.org
+$boost=6,site=wikidata.org
 
-$boost=9,site=medium.com
-$boost=8,site=w3schools.com
+# --- Forums / Community / Discussion ---
+$boost=5,site=stackoverflow.com
+$boost=5,site=*.stackexchange.com
+$boost=5,site=serverfault.com
+$boost=5,site=superuser.com
+$boost=5,site=gateoverflow.in
+$boost=5,site=reddit.com
+$boost=4,site=quora.com
 
-$boost=7,site=electronics.stackexchange.com
+# --- Academic / Educational ---
+$boost=4,site=*.edu
 
-*.edu$boost=10
+# --- Mild Boost: Reputable Tech Learning & Discussion ---
+$boost=3,site=w3schools.com
+$boost=3,site=medium.com
+$boost=3,site=dev.to
+$boost=3,site=freecodecamp.org
 
-$downrank=10,site=geeksforgeeks.org
-$downrank=10,site=tutorialspoint.com
+##################################################
+#  DOWNRANKED SOURCES
+##################################################
+
+# --- SEO-driven or Tutorial Farm Sites ---
+$downrank=6,site=geeksforgeeks.org
+$downrank=6,site=tutorialspoint.com
+$downrank=6,site=javatpoint.com
+$downrank=6,site=studytonight.com
+$downrank=6,site=programiz.com
+$downrank=6,site=beginnersbook.com
+$downrank=6,site=includehelp.com
+$downrank=6,site=w3adda.com
+$downrank=6,site=prepinsta.com
+$downrank=6,site=dotnettricks.com
+$downrank=6,site=tutsmake.com
+
+##################################################
+#  END OF FILE
+##################################################
