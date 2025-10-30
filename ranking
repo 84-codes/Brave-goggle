@@ -3,23 +3,25 @@
 ! public: false
 ! author: Custom
 
+$boost=10,site=wikipedia.org
+$boost=9,site=wikibooks.org
+$boost=8,site=wiktionary.org
+$boost=8,site=dictionary.cambridge.org
+$boost=8,site=vocabulary.com
+$boost=8,site=quora.com
+$boost=8,site=eeet.quora.com
+$boost=8,site=gateoverflow.in
+
+$boost=10,site=stackoverflow.com
+$boost=10,site=stackexchange.com
+$boost=10,site=reddit.com
+
+$boost=9,site=medium.com
+$boost=8,site=w3schools.com
+
+$boost=7,site=electronics.stackexchange.com
+
 *.edu$boost=10
-$site=w3schools.com$boost=8
-$site=stackoverflow.com$boost=10
-$site=stackexchange.com$boost=10
-$site=reddit.com$boost=10
-$site=quora.com$boost=8
-$site=eeet.quora.com$boost=8
-$site=electronics.stackexchange.com$boost=10
-$site=gateoverflow.in$boost=8
 
-$site=wikibooks.org$boost=9
-$site=medium.com$boost=9
-
-$site=wikipedia.org$boost=10
-$site=wiktionary.org$boost=9
-$site=dictionary.cambridge.org$boost=8
-$site=vocabulary.com$boost=8
-
-$site=geeksforgeeks.org$downrank=10
-$site=tutorialspoint.com$downrank=10
+$downrank=10,site=geeksforgeeks.org
+$downrank=10,site=tutorialspoint.com
