@@ -1,7 +1,11 @@
-# Name: My preferred sources (boost Wikipedia + Reddit; downrank GfG/Tutorialspoint)
-# Description: Boost trusted reference and community sites from the screenshot; downrank known scraper/low-value tutorial sites.
+! name: Boost Wiki, Reddit & Quality Refs
+! description: Boosts Wikipedia, Reddit, StackExchange, Wiktionary, and dictionaries; downranks GeeksforGeeks & TutorialsPoint.
+! public: false
+! author: Custom
+
 # Author: Shekhar C
 # Created: 2025-10-30
+
 
 # Strong boosts (1..10 where larger = stronger effect)
 $boost=6,site=wikipedia.org
