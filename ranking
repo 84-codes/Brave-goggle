@@ -1,46 +1,19 @@
 ! name: Boost Wiki, Reddit & Quality Refs
 ! description: Boosts Wikipedia, Reddit, StackExchange, Wiktionary, and dictionaries; downranks GeeksforGeeks & TutorialsPoint.
 ! public: false
-! author: Custom
+! author: skc
 
-# Author: Shekhar C
-# Created: 2025-10-30
+$site=reddit.com$boost=10
+$site=stackexchange.com$boost=10
+$site=wikipedia.org$boost=10
+$site=wiktionary.org$boost=9
+$site=dictionary.cambridge.org$boost=8
+$site=vocabulary.com$boost=8
+$site=quora.com$boost=7
+$site=eeet.quora.com$boost=7
+$site=electronics.stackexchange.com$boost=10
+$site=gateoverflow.in$boost=7
+$site=stackoverflow.com$boost=10
 
-
-# Strong boosts (1..10 where larger = stronger effect)
-$boost=6,site=wikipedia.org
-$boost=6,site=en.wikipedia.org
-$boost=5,site=reddit.com
-$boost=5,site=www.reddit.com
-
-# Stack Exchange family and StackOverflow
-$boost=5,site=stackoverflow.com
-$boost=4,site=electronics.stackexchange.com
-$boost=4,site=gateoverflow.in
-# (include other StackExchange subdomains you want)
-$boost=4,site=*.stackexchange.com
-
-# Q&A / community sites shown in image
-$boost=4,site=quora.com
-$boost=4,site=eeet.quora.com
-
-# Reference / dictionary / vocab sites shown in image
-$boost=4,site=dictionary.cambridge.org
-$boost=4,site=vocabulary.com
-$boost=4,site=wiktionary.org
-
-# Generic safe boost for developer/official docs you might want
-$boost=3,site=stackoverflow.blog
-$boost=3,site=docs.microsoft.com
-$boost=3,site=developer.mozilla.org
-
-# Downrank (reduce ranking but not necessarily remove)
-$downrank=6,site=geeksforgeeks.org
-$downrank=6,site=www.geeksforgeeks.org
-$downrank=6,site=tutorialspoint.com
-$downrank=6,site=www.tutorialspoint.com
-
-# Optional: fully discard some domains 
-# $discard,site=example-bad-site.com
-
-# End of file
+$site=geeksforgeeks.org$downrank=10
+$site=tutorialspoint.com$downrank=10
