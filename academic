@@ -7,20 +7,19 @@
 #  ALLOWED SOURCES
 ##################################################
 
-u wikipedia.org           $boost=10
-u wikibooks.org           $boost=9
-u wikiversity.org         $boost=9
-u wiktionary.org          $boost=9
-u wikidata.org            $boost=9
-
-# --- Strictly .edu domains (no .edu.xx) ---
-u *.edu                   $boost=10
+$discard
+$boost=4,site=wikipedia.org
+$boost=4,site=wikibooks.org
+$boost=4,site=wiktionary.org          
+$boost=4,site=wikiversity.org         
+$boost=4,site=wikidata.org
+$boost=4,site=wikibooks.org
+$boost=4,site=*.edu       
 
 ##################################################
 #  DOWNRANK EVERYTHING ELSE
 ##################################################
 
-u *                       $downrank=10
 
 ##################################################
 #  END OF FILE
