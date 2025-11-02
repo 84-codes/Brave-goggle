@@ -13,3 +13,5 @@ $boost=4,site=wikibooks.org
 # $boost=4,site=.edu
 #*.edu$boost=10
 $boost=3,site=edu
+
+edu.*$discard
