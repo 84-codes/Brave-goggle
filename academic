@@ -1,5 +1,5 @@
 ! name: wiki-edu-only
-! description: Only show results from Wikipedia and .edu (excluding .edu.xx)
+! description: Only show results from Wikipedia and .edu sites
 ! public: false
 ! author: Custom
 
@@ -7,21 +7,20 @@
 #  ALLOWED SOURCES
 ##################################################
 
-# --- Wikipedia and sister sites ---
-$boost=10,site=wikipedia.org
-$boost=9,site=wikibooks.org
-$boost=9,site=wikiversity.org
-$boost=9,site=wiktionary.org
-$boost=9,site=wikidata.org
+u wikipedia.org           $boost=10
+u wikibooks.org           $boost=9
+u wikiversity.org         $boost=9
+u wiktionary.org          $boost=9
+u wikidata.org            $boost=9
 
-# --- Educational (.edu) domains ---
-$boost=10,site=.edu
+# --- Strictly .edu domains (no .edu.xx) ---
+u *.edu                   $boost=10
 
 ##################################################
 #  DOWNRANK EVERYTHING ELSE
 ##################################################
 
-$downrank=10,site=.*
+u *                       $downrank=10
 
 ##################################################
 #  END OF FILE
