@@ -4,13 +4,10 @@
 ! author: Custom
 
 $discard
-$boost=4,site=wikipedia.org
+$boost=6,site=wikipedia.org
 $boost=4,site=wikibooks.org
-$boost=4,site=wiktionary.org          
+$boost=5,site=wiktionary.org          
 $boost=4,site=wikiversity.org         
-$boost=4,site=wikidata.org
-$boost=4,site=wikibooks.org
 $discard,site=www.academia.edu
-#*.edu$boost=10
-$boost=3,site=edu
+$boost=5,site=edu
 edu.*$discard
