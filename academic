@@ -10,7 +10,7 @@ $boost=4,site=wiktionary.org
 $boost=4,site=wikiversity.org         
 $boost=4,site=wikidata.org
 $boost=4,site=wikibooks.org
-$discard,site=www.academia.edu/
+$discard,site=www.academia.edu
 #*.edu$boost=10
 $boost=3,site=edu
 edu.*$discard
