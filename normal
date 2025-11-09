@@ -12,11 +12,6 @@ $boost=4,site=dev.to
 
 $boost=5,site=quora.com
 
-/discourse.$boost=4
-/forum.$boost=4
-/forums.$boost=4
-$boost=10,site=meta.discourse.org
-$site=reddit.com,boost=4
 
 ! Bluesky
 $boost,site=bsky.app
