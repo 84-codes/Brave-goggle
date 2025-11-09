@@ -3,7 +3,7 @@
 ! public: false
 ! author: Custom
 
-$boost=6,site=wikipedia.org
+$boost=10,site=wikipedia.org
 $boost=4,site=wikibooks.org
 $boost=5,site=wiktionary.org          
 $boost=4,site=vocabulary.org         
@@ -11,14 +11,12 @@ $boost=4,site=medium.com
 $boost=4,site=dev.to
 
 $boost=5,site=quora.com
-$boost=5,site=reddit.com
 
-
-/discourse.$boost=10
-/forum.$boost=10
-/forums.$boost=10
+/discourse.$boost=4
+/forum.$boost=4
+/forums.$boost=4
 $boost=10,site=meta.discourse.org
-$site=reddit.com,boost=10
+$site=reddit.com,boost=4
 
 ! Bluesky
 $boost,site=bsky.app
