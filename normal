@@ -30,6 +30,7 @@ $boost,site=lemmy.ml
 $boost,site=lemmy.world
 $boost,site=programming.dev
 $discard,site=www.geeksforgeeks.org
+$discard,site=youtube.com
 
 ! Mastodon
 $boost,site=flipboard.social
