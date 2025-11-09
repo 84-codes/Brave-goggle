@@ -1,0 +1,51 @@
+! name: search
+! description: Only show results from Wikipedia and .edu sites
+! public: false
+! author: Custom
+
+$boost=6,site=wikipedia.org
+$boost=4,site=wikibooks.org
+$boost=5,site=wiktionary.org          
+$boost=4,site=vocabulary.org         
+$boost=4,site=medium.com         
+$boost=4,site=dev.to
+
+$boost=5,site=quora.com
+$boost=5,site=reddit.com
+
+
+/discourse.$boost=10
+/forum.$boost=10
+/forums.$boost=10
+$boost=10,site=meta.discourse.org
+$site=reddit.com,boost=10
+
+! Bluesky
+$boost,site=bsky.app
+
+! Kbin
+$boost,site=kbin.social
+
+! Lemmy
+$boost,site=alien.top
+$boost,site=lemmy.ml
+$boost,site=lemmy.world
+$boost,site=programming.dev
+$discard,site=www.geeksforgeeks.org
+
+! Mastodon
+$boost,site=flipboard.social
+$boost,site=hachyderm.io
+$boost,site=masto.ai
+$boost,site=mastodon.cloud
+$boost,site=mastodon.online
+$boost,site=mastodon.social
+$boost,site=mastodon.world
+$boost,site=mastodonapp.uk
+$boost,site=mountains.social
+$boost,site=mozilla.social
+$boost,site=mstdn.party
+$boost,site=mstdn.social
+$boost,site=social.notjustbikes.com
+$boost,site=social.vivaldi.net
+$boost,site=universeodon.com
